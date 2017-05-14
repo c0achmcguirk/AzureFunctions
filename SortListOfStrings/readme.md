@@ -4,6 +4,8 @@
 
 This function was created using the `azure-functions-core-tools` npm package.
 
+edited
+
 Used the following command:
 
 ```
