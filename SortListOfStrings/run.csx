@@ -11,5 +11,5 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     var individualStrings = inputStrings.Split(',').ToList<string>();
     individualStrings.Sort();
     
-    return req.CreateResponse(HttpStatusCode.OK, string.Join(",", individualStrings));
+    return req.CreateResponse(HttpStatusCode.OK, "staging: " + string.Join(",", individualStrings));
 }
