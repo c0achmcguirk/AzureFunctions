@@ -2,7 +2,7 @@ using System.Net;
 
 public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
 {
-    log.Info("C# HTTP trigger function processed a request. Updated.");
+    log.Info("C# HTTP trigger function processed a request. Updated again.");
 
     // parse query parameter
     string list = req.GetQueryNameValuePairs()
