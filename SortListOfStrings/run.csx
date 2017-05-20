@@ -2,7 +2,7 @@ using System.Net;
 
 public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
 {    
-    log.Info("C# HTTP trigger function processed a request. Staging Env. #2");
+    log.Info("Update for stage environment");
 
     string inputStrings = req.GetQueryNameValuePairs()
         .FirstOrDefault(q => string.Compare(q.Key, "list", true) == 0)
